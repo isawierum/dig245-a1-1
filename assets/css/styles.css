@@ -1,20 +1,46 @@
 
+body{
+  background-color: black;
+}
 
+.hidden{
+  display: none;
+}
 
+.two-faced-bkgr{
+  background-image:url(../img/roomimage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 450px;
+}
 
-.hidden-btn {
+.two-faced-popup{
+  position: absolute;
+  top: 75px;
+  left: 200px;
+  width: 1000px
+  height 600px;
+  background-color: lavender;
+  z-index: 11;
+
+}
+.hidden-btn{
 	position: absolute;
 	display: block;
 	z-index: 10;
-	width: 115px;
-	height: 205px;
-  border: 2px solid red;
+	width: 200px;
+	height: 210px;
+  border: 2px solid black;
+  left: 175px;
+  top: 190px;
 }
 
-.twofaced{
-
+.sneaky{
+  font-size: 8px;
 }
 
-#two-faced-button{
+.results-popup{
 
 }
