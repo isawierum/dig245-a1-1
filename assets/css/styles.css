@@ -7,6 +7,10 @@ body{
   display: none;
 }
 
+.visible{
+  display: block;
+}
+
 .two-faced-bkgr{
   background-image:url(../img/roomimage.png);
   background-repeat: no-repeat;
@@ -41,6 +45,23 @@ body{
   font-size: 8px;
 }
 
-.results-popup{
+.-results-popup{
+  position: absolute;
+  top: 75px;
+  left: 200px;
+  width: 1000px
+  height 600px;
+  background-color: pink;
+  z-index: 11;
 
+}
+
+.posi-results-popup{
+  position: absolute;
+  top: 75px;
+  left: 200px;
+  width: 1000px
+  height 600px;
+  background-color: lime;
+  z-index: 11;
 }
