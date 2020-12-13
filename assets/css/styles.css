@@ -8,7 +8,11 @@ body{
 }
 
 .visible{
-  display: block;
+  display:block;
+}
+.popup{
+  font-family: Times New Roman;
+
 }
 
 .two-faced-bkgr{
@@ -36,17 +40,75 @@ body{
 	z-index: 10;
 	width: 200px;
 	height: 210px;
-  border: 2px solid black;
+  border: none;
   left: 175px;
   top: 190px;
 }
+.hidden-btn:hover{
+	position: absolute;
+	display: block;
+	z-index: 10;
+	width: 200px;
+	height: 210px;
+  border: 2px solid black;
+  left: 175px;
+  top: 190px;
+  cursor: pointer;
+}
 
+.x{
+  position:absolute;
+  top:0;
+  right:0;
+  border: none;
+  background-color: red;
+  color: white;
+}
 .sneaky{
   font-size: 8px;
 }
 
-.-results-popup{
+.solution1 {
+  background-color: lavender;
+  color: black;
+  border: lavender;
+  padding: 1px 1px
+}
+
+.solution1:hover {
+  color: blue;
+}
+
+.ok{
   position: absolute;
+  right:0;
+  bottom: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 2px, solid, black;
+}
+
+.upgrade{
+  position: relative;
+  font-weight: bold;
+  left :140px;
+  bottom: 10px;
+  background-color: lavender;
+  border: none;
+}
+.upgrade:hover{
+  position: relative;
+  font-weight: bold;
+  left :140px;
+  bottom: 10px;
+  background-color: lavender;
+  border: none;
+  color: blue;
+}
+}
+.-results-popup{
+  position: relative;
   top: 75px;
   left: 200px;
   width: 1000px
@@ -63,5 +125,10 @@ body{
   width: 1000px
   height 600px;
   background-color: lime;
+  z-index: 11;
+}
+
+.noanswer{
+  background-color: red;
   z-index: 11;
 }
