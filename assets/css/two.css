@@ -32,22 +32,23 @@ body{
 
 }
 .hidden-btn{
-	position: absolute;
-	display: block;
+  position:absolute;
+  display: block;
 	z-index: 10;
-	width: 200px;
-	height: 210px;
-  top: 165px;
-  left: 25px;
+  width: 200px;
+  height: 210px;
+  top: 190px;
+  left: 30px;
 }
 
 .hidden-btn:hover{
 	position: absolute;
 	display: block;
 	z-index: 10;
-	width: 200px;
-  top: 165px;
-  left: 25px;
+  width: 200px;
+  height: 210px;
+  top: 190px;
+  left: 30px;
   cursor: pointer;
   border: 2px solid white;
 }
@@ -117,12 +118,8 @@ body{
 
 .posi-results-popup{
   top: 75px;
-  width: 450px;
-  height: 350px;
   background-color: #c6c5cd;
   z-index: 11;
-  padding:10px 10px;
-  padding-right: 10px;
 }
 .heading{
   font-size: 50px;
@@ -140,21 +137,18 @@ body{
   font-size: 12px;
 }
 
-
-
 .noanswer{
+  top: 75px;
   background-color: #c6c5cd;
   z-index: 11;
 }
 
 .exit1{
-  position: absolute;
   background-color:#c6c5cd;
   border: 5px solid white;
   font-size: 15px;
-    right:20px;
-    bottom: 20px;
-
+  top: 10px;
+  left: 30px;
   }
 
 .exit2{
@@ -162,6 +156,11 @@ body{
   background-color: #c6c5cd;
   border: 5px solid white;
   font-size: 15px;
+  right:0;
+  bottom: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .back{

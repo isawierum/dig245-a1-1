@@ -20,7 +20,7 @@
 <body>
 
 <div class="container">
-<a  class = "back" href="index.html" target="_blank">Back to House</a>
+<a  class = "back" href="index.html" target="_self">Back to House</a>
 <div class = row>
   <div class="col-4">
   </div>
@@ -33,15 +33,48 @@
 </div>
 
 
-<div class="first-popup hidden popup">
-  <p>Let's buy some flower's for your mom's birthday</p>
-
-<img src="assets/img/flowers.png" alt="uh oh! I promise they're beautiful.">
-
- <p>Price: 30 non-silver coins</p>
- <p> <button  class = "continue" type="button" name="button">Buy Flowers</button> </p>
+<div class="row">
+<div class="col-3">
 </div>
-<div class="second-popup hidden popup">
+
+<div class="first-popup hidden popup col-6">
+  <p></p>
+
+  <span>Let's buy flowers for your mom!</span>
+            <br>
+            <p>You've got a budget of 35 magic beans</p>
+            <input type="radio" name="flowers" id="flower1" value="flower2">
+            <label for="flower1">  <figure><img src="assets/img/flowers.png" alt="uh oh! I promise they're beautiful.">
+                <figcaption>25 beans</figcaption>
+              </figure>
+            </label>
+            <br>
+            <input type="radio" name="flowers" id="flower2" value="flower2">
+            <label for="flower2">
+              <figure><img src="assets/img/flowers2.png" alt="uh oh! I promise they're beautiful.">
+                <figcaption>32 beans</figcaption>
+              </figure>
+              </label>
+            <br>
+            <input type="radio" name="flowers" id="flower3" value="flower3">
+            <label for=flower3>
+              <figure><img src="assets/img/flowers3.png" alt="uh oh! I promise they're beautiful.">
+                <figcaption>29 beans</figcaption>
+              </figure>
+            </label>
+
+ <p> <button  class = "continue" type="button" name="button">Buy Flowers</button> </p>
+
+</div>
+<div class="col-3">
+</div>
+</div>
+
+<div class="row">
+  <div class="col-3">
+
+  </div>
+<div class="second-popup hidden popup col-6">
 
 <label for="first name">First Name</label>
         <!--Add your code below-->
@@ -98,10 +131,17 @@
 <br>
 <p> <button class = "continue2" type="button" name="button">Continue</button> </p>
 </div>
+<div class="col-3">
 
-<div class="last-popup">
+</div>
+</div>
+
+
+<div class="last-popup hidden popup">
   <P>THIS IS THE FINAL POPUP</P>
 </div>
+
+
 
 
   <div class="two-faced-popup hidden popup">
