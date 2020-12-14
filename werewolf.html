@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/css/werewolf.css">
+<style>
+
+</style>
+
+<title>Dark Patterns</title>
+</head>
+
+<body>
+
+<div class="werewolf-bkgr">
+
+<div class="first-popup hidden popup">
+  <p>Let's buy some flower's for your mom's birthday</p>
+
+<img src="assets/img/flowers.png" alt="uh oh! I promise they're beautiful.">
+
+ <p>Price: 30 non-silver coins</p>
+ <p> <button  class = "continue" type="button" name="button">Buy Flowers</button> </p>
+</div>
+<div class="second-popup hidden popup">
+
+<label for="first name">First Name</label>
+        <!--Add your code below-->
+        <select id="first name" name="first name">
+          <option value="Alaska">Alaska</option>
+          <option value="Luna">Remus</option>
+          <option value="Lupa">Lupa</option>
+          <option value="Fang">Fang</option>
+
+        </select>
+<br>
+<label for="last name">Last Name</label>
+        <!--Add your code below-->
+        <select id="last name" name="last name">
+          <option value="Argent">Argent</option>
+          <option value="Howler">Potato</option>
+          <option value="Tundra">Tundra</option>
+          <option value="Grey">Grey</option>
+        </select>
+<br>
+<label for="address">Address</label>
+        <!--Add your code below-->
+        <select id="address" name="address">
+          <option value="address1">123 Full Moon Lane</option>
+          <option value="address2">31 Woodland Street</option>
+          <option value="address3">602 Crescent Dr</option>
+        </select>
+
+<br>
+<label for="city">City</label>
+        <!--Add your code below-->
+        <select id="city" name="city">
+          <option value="Forks, WA">Forks, WA</option>
+          <option value="Storybrook, ME">Storybrook, ME</option>
+          <option value="Beacon Hills, CA">Beacon Hills, CA</option>
+        </select>
+<br>
+<label for="howl#">Howling Number</label>
+        <!--Add your code below-->
+        <select id="howl#" name="howl#">
+          <option value="howl1">615</option>
+          <option value="howl2">417</option>
+          <option value="howl3">239</option>
+        </select>
+<br>
+<label for="cc#">Credit Card Number</label>
+        <!--Add your code below-->
+        <select id="cc#" name="cc#">
+          <option value="cc1">12345</option>
+          <option value="cc2">24680</option>
+          <option value="cc3">97531</option>
+        </select>
+
+<br>
+<p> <button class = "continue2" type="button" name="button">Continue</button> </p>
+</div>
+
+<div class="last-popup">
+  <P>THIS IS THE FINAL POPUP</P>
+</div>
+
+
+  <div class="two-faced-popup hidden popup">
+    <button class = "x" type ="button">X</button>
+    <h1>UPGRADE!</h1>
+    <h2>MischiefFinder3001</h2>
+    <p class = "sneaky" >click <button  class = "solution1" type="button">here</button> to view your upgrade plan</p>
+    <p>
+      <ul>
+        <li>New MischiefMode helps you earn points!</li>
+        <li>Find troublesome opportunities within 25 miles!</li>
+        <li>It's freakin' awesome!</li>
+      </ul>
+    </p>
+    <p><button type="button" class="upgrade">Upgrade Now</button></p>
+    <h3><button type="button" class ="ok">OK!</button></h3>
+  </div>
+
+  <div class="posi-results-popup hidden popup">
+    <p class = "heading">Congratulations!</p>
+    <p class = "minor"> This is the link that will redirect you to a
+    confusing page where you will be able to avoid the upgrade!</p>
+    <p class = "text">What!? We know. It's confusing. What you have just experienced is the dark pattern
+      known as the "bait and switch." You'd think that an 'X' would get you out, but sometimes companies
+       will take advantage of the fact that you are expecting them to adhere to
+    design norms. Web design can be pretty two-faced!</p>
+    <p><button type = "button" class = "exit1">OK</button></p>
+  </div>
+
+  <div class="-results-popup hidden popup">
+    <h2>Upgrading now...<br> Estimated time remaining: 378 hours</h2>
+    <p> <button type="button" class="again">Try Again</button> </p>
+    <p> <button type="button" class="giveup">Give Up</button> </p>
+
+  </div>
+
+  <div class="noanswer hidden popup">
+    <p class = "heading">Couldn't solve it?</p>
+    <p class = "minor">To succesfully get out of the popup,
+      you should have clicked the 'X' in the right hand corner</p>
+
+    <p class = "text">What!? We know. It's confusing. What you have just experienced is the dark pattern
+      known as the "bait and switch." You'd think that an 'X' would get you out, but sometimes companies
+       will take advantage of the fact that you are expecting them to adhere to
+    design norms. Web design can be pretty two-faced!</p>
+    <p> <button  class = "exit2" type="button">OK</button> </p>
+  </div>
+
+  <a id = "werewolf-button" class = "hidden-btn"></a>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/werewolf.js"></script>
+
+
+</body>
+
+</html>
