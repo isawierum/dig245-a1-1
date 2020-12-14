@@ -1,0 +1,72 @@
+
+
+.background{
+  background-color: lavender;
+  background-position: center;
+  background-size: cover;
+  z-index = 1;
+}
+
+img{
+  width: 900px;
+  height: 700px;
+  z-index = 2;
+  display: block;
+ margin-right: 50px;
+
+
+}
+
+.heading{
+  font-family: 'Creepster', cursive;
+  text-align: center;
+  font-size: 60px;
+}
+
+.subheading{
+  font-family: Seravek;
+  text-align: center;
+  font-size: 20px;
+}
+
+.hidden-btn{
+  position: absolute;
+  display: block;
+  z-index: 10;
+
+}
+
+.hidden-btn:hover {
+  position: absolute;
+  border: 2px solid white;
+  display: block;
+  z-index: 10;
+}
+
+#werewolf-page{
+  width: 100px;
+  height: 150px;
+  left: 450px;
+  top: 190px;
+}
+
+#werewolf-page:hover{
+  width: 100px;
+  height: 150px;
+  left: 450px;
+  top: 190px;
+}
+
+#two-page{
+  width: 50px;
+  height: 75px;
+  left: 575px;
+  top: 375px;
+}
+
+#two-page:hover{
+  width: 50px;
+  height: 75px;
+  left: 575px;
+  top: 375px;
+}

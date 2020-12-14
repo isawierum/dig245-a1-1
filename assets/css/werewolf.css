@@ -15,7 +15,7 @@ body{
 
 }
 
-.werewolf-bkgr{
+.container{
   background-image:url(../img/monster2.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -75,8 +75,6 @@ label{
 	z-index: 10;
 	width: 200px;
 	height: 210px;
-  border: none;
-  left: 300px;
   top: 190px;
 
 
@@ -86,8 +84,8 @@ label{
 	display: block;
 	z-index: 10;
 	width: 200px;
+  width: 200px;
 	height: 210px;
-  left: 300px;
   top: 190px;
   cursor: pointer;
   border: .5px solid white;
@@ -225,4 +223,15 @@ label{
 h1, h2, p{
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.back{
+  position:absolute;
+  border: 3px solid white;
+  font-family: times new roman;
+  font-size: 20px;
+  color: white;
+  background-color: #28292e;
+  padding: 3px 3px;
+  top: 5px;
 }
