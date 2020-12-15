@@ -90,3 +90,19 @@ $(".continue2").on("click",function(){
 		$(".last-popup").addClass("hidden");
 		$(".posi-results-popup").removeClass("hidden");
 	});
+
+	$(".exit1").on("click", function(){
+		$(".posi-results-popup").addClass("hidden");
+		$("#werewolf-button").on("click",function(){
+			$(".first-popup").removeClass("hidden");
+			$("#werewolf-button").off('click');
+		});
+	});
+
+	$(".exit2").on("click", function(){
+		$(".-results-popup").addClass("hidden");
+		$("#werewolf-button").on("click",function(){
+			$(".first-popup").removeClass("hidden");
+			$("#werewolf-button").off('click');
+		});
+	});
