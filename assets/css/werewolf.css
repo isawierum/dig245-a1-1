@@ -40,6 +40,13 @@ body{
 
 }
 
+.last-popup{
+  top: 75px;
+  background-color: lavender;
+  z-index: 11;
+  padding-top: 20px;
+}
+
 img{
   height: 200px;
   width: 200px;
@@ -227,4 +234,5 @@ h1, h2, p{
   background-color: #28292e;
   padding: 3px 3px;
   top: 5px;
+  z-index: 100;
 }

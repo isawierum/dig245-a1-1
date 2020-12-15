@@ -172,4 +172,5 @@ body{
   background-color: #28292e;
   padding: 3px 3px;
   top: 5px;
+  z-index: 100;
 }
