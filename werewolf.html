@@ -42,24 +42,24 @@
 
   <span>Let's buy flowers for your mom!</span>
             <br>
-            <p>You've got a budget of 35 magic beans</p>
+            <p>You've got a budget of 30 magic beans</p>
             <input type="radio" name="flowers" id="flower1" value="flower2">
             <label for="flower1">  <figure><img src="assets/img/flowers.png" alt="uh oh! I promise they're beautiful.">
-                <figcaption>25 beans</figcaption>
+                <figcaption>23 beans</figcaption>
               </figure>
             </label>
             <br>
             <input type="radio" name="flowers" id="flower2" value="flower2">
             <label for="flower2">
               <figure><img src="assets/img/flowers2.png" alt="uh oh! I promise they're beautiful.">
-                <figcaption>32 beans</figcaption>
+                <figcaption>29 beans</figcaption>
               </figure>
               </label>
             <br>
             <input type="radio" name="flowers" id="flower3" value="flower3">
             <label for=flower3>
               <figure><img src="assets/img/flowers3.png" alt="uh oh! I promise they're beautiful.">
-                <figcaption>29 beans</figcaption>
+                <figcaption>27 beans</figcaption>
               </figure>
             </label>
 
@@ -80,7 +80,7 @@
         <!--Add your code below-->
         <select id="firstname" name="firstname">
           <option value="Alaska">Alaska</option>
-          <option value="Luna">Remus</option>
+          <option value="Remus">Remus</option>
           <option value="Lupa">Lupa</option>
           <option value="Fang">Fang</option>
 
@@ -90,7 +90,7 @@
         <!--Add your code below-->
         <select id="lastname" name="lastname">
           <option value="Argent">Argent</option>
-          <option value="Howler">Potato</option>
+          <option value="Potato">Potato</option>
           <option value="Tundra">Tundra</option>
           <option value="Grey">Grey</option>
         </select>
@@ -98,9 +98,9 @@
 <label for="address">Address</label>
         <!--Add your code below-->
         <select id="address" name="address">
-          <option value="address1">123 Full Moon Lane</option>
-          <option value="address2">31 Woodland Street</option>
-          <option value="address3">602 Crescent Dr</option>
+          <option value="123 Full Moon Lane">123 Full Moon Lane</option>
+          <option value="31 Woodland Street">31 Woodland Street</option>
+          <option value="602 Crescent Dr">602 Crescent Dr</option>
         </select>
 
 <br>
@@ -115,17 +115,17 @@
 <label for="howlnum">Howling Number</label>
         <!--Add your code below-->
         <select id="howlnum" name="howlnum">
-          <option value="howl1">615</option>
-          <option value="howl2">417</option>
-          <option value="howl3">239</option>
+          <option value="615">615</option>
+          <option value="417">417</option>
+          <option value="239">239</option>
         </select>
 <br>
 <label for="ccnum">Credit Card Number</label>
         <!--Add your code below-->
         <select id="ccnum" name="ccnum">
-          <option value="cc1">12345</option>
-          <option value="cc2">24680</option>
-          <option value="cc3">97531</option>
+          <option value="12345">12345</option>
+          <option value="24680">24680</option>
+          <option value="97531">97531</option>
         </select>
 
 <br>
@@ -138,80 +138,73 @@
 
 
 <div class="row">
-<div class="col-3">
+<div class="col-1">
 
 </div>
 
-<div class="last-popup popup col-6">
-  <div class="names">
-    THERE IS ACTUALLY SOMETHING HERE!!!
-  </div>
-  <div class="addy1">
+<div class="last-popup hidden popup col-10">
+  <div class="col-5">
 
-  </div>
-  <div class="howl">
 
+  <div class="names"></div>
+  <div class="addy1"></div>
+  <div class="howl"> </div>
+  <div class="cc"></div>
+  <div class="addy2"></div>
   </div>
-  <div class="cc">
+  <div class="prices col-5">
+    <div class="bill">
+    </div>
+    <button class = "confirm" type="button" name="button">Confirm Purchase</button>
+    <button class = "leave" type="button" name="button">Leave</button>
+  </div>
 
-  </div>
-  <div class="addy2">
+<div class="col-1">
 
-  </div>
-<p>Price of flowers: <p id = #bill></p> </p>
 </div>
-<div class="col-3">
-
 </div>
 </div>
 
 
+<div class="row">
+  <div class="col-3">
 
-  <div class="two-faced-popup hidden popup">
-    <button class = "x" type ="button">X</button>
-    <h1>UPGRADE!</h1>
-    <h2>MischiefFinder3001</h2>
-    <p class = "sneaky" >click <button  class = "solution1" type="button">here</button> to view your upgrade plan</p>
-    <p>
-      <ul>
-        <li>New MischiefMode helps you earn points!</li>
-        <li>Find troublesome opportunities within 25 miles!</li>
-        <li>It's freakin' awesome!</li>
-      </ul>
-    </p>
-    <p><button type="button" class="upgrade">Upgrade Now</button></p>
-    <h3><button type="button" class ="ok">OK!</button></h3>
   </div>
+  <div class="col-6">
+
 
   <div class="posi-results-popup hidden popup">
-    <p class = "heading">Congratulations!</p>
-    <p class = "minor"> This is the link that will redirect you to a
-    confusing page where you will be able to avoid the upgrade!</p>
-    <p class = "text">What!? We know. It's confusing. What you have just experienced is the dark pattern
-      known as the "bait and switch." You'd think that an 'X' would get you out, but sometimes companies
-       will take advantage of the fact that you are expecting them to adhere to
-    design norms. Web design can be pretty two-faced!</p>
+    <p class = "heading">You did it!</p>
+    <p class = "minor"> Although your mom won't be getting any flowers...</p>
+    <p class = "text">Good job! You noticed that the hidden taxes and fees put you
+    waaaaaaaay over budget. Kind of unfair how they didn't tell you about those
+    extra costs until the last minute, huh? That's a dark pattern! This one
+    has a pretty straightforeward name: Hidden Costs. You may think you're beginning a
+    straightforeward transaction, but the full moon comes out and the final cost transform into
+    something terrifying and monstrous! </p>
     <p><button type = "button" class = "exit1">OK</button></p>
   </div>
 
-  <div class="-results-popup hidden popup">
-    <h2>Upgrading now...<br> Estimated time remaining: 378 hours</h2>
-    <p> <button type="button" class="again">Try Again</button> </p>
-    <p> <button type="button" class="giveup">Give Up</button> </p>
+  <div class="-results-popup popup">
+    <p class = "heading">Oh no!</p>
+    <p class = "minor">You just bought over $40 of flowers!</p>
 
-  </div>
-
-  <div class="noanswer hidden popup">
-    <p class = "heading">Couldn't solve it?</p>
-    <p class = "minor">To succesfully get out of the popup,
-      you should have clicked the 'X' in the right hand corner</p>
-
-    <p class = "text">What!? We know. It's confusing. What you have just experienced is the dark pattern
-      known as the "bait and switch." You'd think that an 'X' would get you out, but sometimes companies
-       will take advantage of the fact that you are expecting them to adhere to
-    design norms. Web design can be pretty two-faced!</p>
+    <p class = "text">Guess that means you can't go to the movies with friends tonight.
+    While your mom definitely deserves it, the hidden taxes and fees put you
+    waaaaaaaay over budget. Kind of unfair how they didn't tell you about those
+    extra costs until the last minute, huh? That's a dark pattern! This one
+    has a pretty straightforeward name: Hidden Costs. You may think you're beginning a
+    straightforeward transaction, but the full moon comes out and the final cost transform into
+    something terrifying and monstrous! </p>
     <p> <button  class = "exit2" type="button">OK</button> </p>
+  </div>
 </div>
+<div class="col-3">
+
+</div>
+</div>
+
+
 </div>
 
 

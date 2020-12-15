@@ -120,6 +120,7 @@ body{
   top: 75px;
   background-color: #c6c5cd;
   z-index: 11;
+  height: 350px;
 }
 .heading{
   font-size: 50px;
@@ -141,14 +142,16 @@ body{
   top: 75px;
   background-color: #c6c5cd;
   z-index: 11;
+  height: 335px;
 }
 
 .exit1{
+  position: absolute;
   background-color:#c6c5cd;
   border: 5px solid white;
   font-size: 15px;
-  top: 10px;
-  left: 30px;
+  right:15px;
+  bottom: 15px;
   }
 
 .exit2{
@@ -156,11 +159,8 @@ body{
   background-color: #c6c5cd;
   border: 5px solid white;
   font-size: 15px;
-  right:0;
-  bottom: 0;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-top: 40px;
+  right:15px;
+  bottom: 15px;
 }
 
 .back{

@@ -45,6 +45,13 @@ body{
   background-color: lavender;
   z-index: 11;
   padding-top: 20px;
+  font-size: 20px;
+  font-family: Times New Roman;
+  color: black;
+}
+
+.prices{
+  display: inline;
 }
 
 img{
@@ -63,10 +70,6 @@ label{
   padding-left: 15px;
   padding-top: 10px;
   padding-right: 15px;
-}
-
-.last-popup{
-  background-color: white;
 }
 
 .hidden-btn{
@@ -91,82 +94,13 @@ label{
   border: .5px solid white;
 }
 
-.x{
-  position:absolute;
-  top:0;
-  right:0;
-  border: none;
-  background-color: red;
-  color: white;
-}
-.sneaky{
-  font-size: 8px;
-}
-
-.solution1 {
-  background-color: lavender;
-  color: black;
-  border: lavender;
-  padding: 1px 1px
-}
-
-.solution1:hover {
-  color: blue;
-}
-
-.ok{
-  position: absolute;
-  right:0;
-  bottom: 0;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  background-color: white;
-  border: 2px, solid, black;
-}
-
-.upgrade{
-  position: relative;
-  font-weight: bold;
-  left :140px;
-  bottom: 10px;
-  background-color: lavender;
-  border: none;
-
-}
-.upgrade:hover{
-  position: relative;
-  font-weight: bold;
-  left: 140px;
-  bottom: 10px;
-  background-color: lavender;
-  border: none;
-  color: blue;
-}
-
-.-results-popup{
-  text-align: center;
-  position: absolute;
-  top: 75px;
-  left: 200px;
-  width: 425px;
-  height: 225px;
-  background-color: grey;
-  z-index: 11;
-  color: white;
-  padding: 20px 10px;
-
-}
-
 .posi-results-popup{
-  font-size: 9px;
   position: absolute;
   top: 75px;
-  left: 200px;
-  width: 400px;
-  height: 350px;
   background-color: #c6c5cd;
   z-index: 11;
-  padding:10px 10px;
+  height: 350px;
+
 }
 .heading{
   font-size: 50px;
@@ -182,18 +116,15 @@ label{
 
 .text{
   font-size: 12px;
+  margin: 20px;
 }
 
-
-
-.noanswer{
-  position: absolute;
-  background-color: #c6c5cd;
+.-results-popup{
+  position:absolute;
   top: 75px;
-  left: 200px;
-  width: 400px;
-  height: 335px;
+  background-color: #c6c5cd;
   z-index: 11;
+  height: 350px;
 }
 
 .exit1{
@@ -201,11 +132,8 @@ label{
   background-color:#c6c5cd;
   border: 5px solid white;
   font-size: 15px;
-  margin-bottom: 10px;
-    right:0;
-    bottom: 0;
-    margin-right: 20px;
-    margin-bottom: 20px;
+  bottom: 15px;
+  right: 15px;
   }
 
 .exit2{
@@ -213,16 +141,9 @@ label{
   background-color: #c6c5cd;
   border: 5px solid white;
   font-size: 15px;
-  margin-bottom: 10px;
-    right:0;
-    bottom: 0;
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
+  right:15px;
+  bottom: 15px;
 
-h1, h2, p{
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .back{

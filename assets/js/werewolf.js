@@ -8,6 +8,10 @@ $("#werewolf-button").on("click",function(){
 });
 
 
+var price = "";
+var priceval = 0;
+var totalprice = 0;
+
 
 const btn = document.querySelector('.continue');
  // handle click button
@@ -22,17 +26,24 @@ const btn = document.querySelector('.continue');
 			}
 		console.log(id);
 
-		var price = 0;
+
 		 if(id == "flower1"){
-			 price = 25;
+			 price = "23"
+			 priceval = 23;
 		 }
 			 else if (id == "flower2") {
-				 price = 32;
+				 price = "29"
+				 priceval = 29;
 			 }
 			 else {
-			 	price = 29;
+			 	price = "27"
+				priceval = 27;
 			 }
+			 totalprice = String(priceval + 20);
+
 			 console.log(price);
+			 console.log(priceval);
+			 console.log(totalprice)
  };
 
 $(".continue").on("click", function(){
@@ -42,15 +53,13 @@ $(".continue").on("click", function(){
 
 
 
+
 $('#firstname').val(" ");
 $('#lastname').val(" ");
 $('#address').val(" ");
 $('#city').val(" ");
 $('#howlnum').val(" ");
 $('#ccnum').val(" ");
-
-
-
 
 
 $(".continue2").on("click",function(){
@@ -64,69 +73,20 @@ $(".continue2").on("click",function(){
 	var ccnum = $('#ccnum').val();
 
 
-$('.names').html("Name: "+ firstname + " " + lastname);
-$('.addy1').html("Delivery Address: " + address + ", " + city);
-$('.howl').html("Howling Number: " + howlnum);
-$('.cc').html("Credit Card Number: " + ccnum);
-$('.addy2').html("Billing Address: " + address + ", " + city);
-$("#bill").html(price);
-});
-
-
-
-
-$("#two-faced-button").on("click",function(){
-	$(".two-faced-popup").removeClass("hidden");
-	$("#two-faced-button").off('click');
-});
-
-
-/* test popup options
-*/
-$(".x").on("click", function(){
-	$(".two-faced-popup").addClass("hidden");
-	$(".-results-popup").removeClass("hidden");
-});
-
-$(".upgrade").on("click", function(){
-	$(".two-faced-popup").addClass("hidden");
-	$(".-results-popup").removeClass("hidden");
-});
-
-
-$(".ok").on("click", function(){
-	$(".two-faced-popup").addClass("hidden");
-	$(".-results-popup").removeClass("hidden");
-});
-
-$(".solution1").on("click", function(){
-	$(".two-faced-popup").addClass("hidden");
-	$(".posi-results-popup").removeClass("hidden");
-});
-
-/*Answer popup buttons*/
-$(".exit1").on("click", function(){
-	$(".posi-results-popup").addClass("hidden");
-	$("#two-faced-button").on("click",function(){
-		$(".two-faced-popup").removeClass("hidden");
-		$("#two-faced-button").off('click');
-	});
-});
-
-$(".again").on("click", function(){
-	$(".-results-popup").addClass("hidden");
-		$(".two-faced-popup").removeClass("hidden");
+	$('.names').html("<p>Name: "+ firstname + " " + lastname + "</p>");
+	$('.addy1').html("<p>Delivery Address: " + address + ", " + city+ "</p>");
+	$('.howl').html("<p>Howling Number: " + howlnum+ "</p>");
+	$('.cc').html("<p>Credit Card Number: " + ccnum+ "</p>");
+	$('.addy2').html("<p>Billing Address: " + address + ", " + city+ "</p>");
+	$(".bill").html("<p>Price of Flowers: " + price + " beans<br>Tax: 5 beans<br>Fees: 15 beans  <br> Total: " + totalprice + " beans</p>");
 	});
 
-$(".giveup").on("click", function(){
-	$(".-results-popup").addClass("hidden");
-	$(".noanswer").removeClass("hidden");
+	$(".confirm").on("click", function(){
+		$(".last-popup").addClass("hidden");
+		$(".-results-popup").removeClass("hidden");
 	});
 
-	$(".exit2").on("click", function(){
-		$(".noanswer").addClass("hidden");
-		$("#two-faced-button").on("click",function(){
-			$(".two-faced-popup").removeClass("hidden");
-			$("#two-faced-button").off('click');
-		});
+	$(".leave").on("click", function(){
+		$(".last-popup").addClass("hidden");
+		$(".posi-results-popup").removeClass("hidden");
 	});
